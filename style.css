@@ -1,0 +1,181 @@
+.header {
+  padding: 15px 32px;
+  text-align: center;
+  background-color: #7c807d
+}
+
+.title {
+  border: azure;
+
+}
+
+.stats {
+  padding: 15px 32px;
+  text-align: center;
+  background-color: rgb(142, 210, 255);
+}
+
+.interface {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-right: 75px;
+  margin-left: 40px;
+  background-color: grey;
+}
+
+.outsideActions {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 75px;
+  margin-left: 40px;
+  background-color: grey;
+}
+
+.log {
+  text-align: center;
+}
+
+.enemy {
+  padding: 15px 32px;
+  text-align: center;
+  background-color: rgb(255, 104, 104);
+}
+
+/* Dropdown Button */
+.dropbtn {
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #cfcfcf;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(148, 148, 148);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.fireBall {
+  background-color: red;
+}
+
+.fireBall:hover {
+  background-color: rgb(133, 0, 0);
+}
+
+.iceRay {
+  background-color: rgb(0, 81, 255);
+}
+
+.iceRay:hover {
+  background-color: rgb(1, 1, 133);
+}
+
+.healingHands {
+  background-color: rgb(84, 255, 127);
+}
+
+.healingHands:hover {
+  background-color: rgb(0, 102, 5);
+}
+
+.lightningStorm {
+  background-color: rgb(108, 69, 250);
+}
+
+.lightningStorm:hover {
+  background-color: rgb(44, 0, 102);
+}
+
+
+/* Inventory dropdown   */   
+.invDrop {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdownINV {
+  display: none;
+  position: absolute;
+  background-color: #cfcfcf;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdownINV a:hover {background-color: rgb(148, 148, 148);}
+
+
+.invDrop:hover .dropdownINV {display: block;}
+
+.healthPotion {
+  background-color: #f88686;
+  box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	border-radius:9px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+  
+}
+.healthPotion:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+.healthPotion:active {
+	position:relative;
+	top:1px;
+}
+
+.manaPotion {
+  background-color: #86aef8;
+  box-shadow:inset 0px 1px 0px 0px #8eaaf5;
+	background:linear-gradient(to bottom, #374af2 5%, #1f30c6 100%);
+	border-radius:9px;
+	border:1px solid #1b18d0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #0d0581;
+  
+}
+.manaPotion:hover {
+	background:linear-gradient(to bottom, #1f2ac6 5%, #4337f2 100%);
+	background-color:#3e1fc6;
+}
+.manaPotion:active {
+	position:relative;
+	top:1px;
+}

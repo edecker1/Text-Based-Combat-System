@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
+  <script src="gameManager.js">
+    </script>
+  <script src="magic.js">
+    </script>
+	<script src="combat.js">
+    </script>
+	<script src="objects.js">
+	  </script>
+  <script src="levelingUp.js">
+  	</script>
+  <script src = "inventory.js">
+    </script>
+</head>
+
+<body>
+
+	<div class="header">
+		<h2 class = "title">Welcome to the Game</h2>
+    <h4> Here you will create your character!</h4>
+
+    </div>
+
+    <div class = "stats">
+      <p> Character's name: <input name="name" type="text" maxlength="15" id ="name"/> </p>
+      <button onclick = "getName()">Save Name</button>
+      <script>
+        function getName() {
+          var name = document.getElementById('name').value;
+          localStorage.setItem("characterName", name);
+          Player.name = name;
+          localStorage.setItem('player', JSON.stringify(Player));
+          }
+      </script>
+      <button id="next" onclick = "location.href='game.html'">Play</button>
+
+    </div>
+
+    
+  </body>
+</html>

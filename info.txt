@@ -1,0 +1,3 @@
+This is a projext to try and teach myself how to use Javscript, html, and CSS.
+Started in january 2020
+

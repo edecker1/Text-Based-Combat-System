@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
+  <script src="gameManager.js">
+    </script>
+  <script src="magic.js">
+    </script>
+	<script src="combat.js">
+    </script>
+	<script src="objects.js">
+	  </script>
+  <script src="levelingUp.js">
+  	</script>
+  <script src = "inventory.js">
+    </script>
+</head>
+
+<body onload = "gameManager.shop()">
+  <div class = "header">
+    <h1> Welcome to the Shop! </h1>
+    <h3> What can I do for you? </h3>
+    <h4 id = "goldCount"> Gold Pieces </h5>
+
+  </div>
+
+  <div class = "shop">
+    <button id = "healthPotion+" onclick = "healthPotionBuy()" title = "Buy one health potion for 50 gold pieces!"> Health Potion </button>
+    <button id = "manaPotion+" onclick = "manaPotionBuy()" title = "Buy one mana potion for 50 gold pieces!"> Mana Potion </button>
+    <button id = "health+" onclick = "healthBoost()" title = "Gain +25 health for 100 gold pieces!"> +25 HP </button>
+    <button id = "mana+" onclick = "manaBoost()" title = "Gain +15 health for 100 gold pieces!"> +15 mana </button>
+    <button id = "attack+" onclick = "attackBoost()" title = "Gain +5 health for 100 gold pieces!"> +5 attack </button>
+  </div>
+
+  <div class = "bottom">
+    <button id = "return" onclick="location.href='game.html'"> Head Back </button>
+
+  </body>
+</html>

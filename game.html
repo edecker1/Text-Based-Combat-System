@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
+  <script src="gameManager.js">
+    </script>
+  <script src="magic.js">
+    </script>
+	<script src="combat.js">
+    </script>
+	<script src="objects.js">
+	  </script>
+  <script src="levelingUp.js">
+  	</script>
+  <script src = "inventory.js">
+    </script>
+</head>
+
+<body onload = "gameManager.game()">
+
+	<div class="header">
+		<h2 class = "title">Defeat as many enemies as possible!</h2>
+		<button id = "newGame" onclick = "gameManager.setGameStart()">New Game </button>
+    <button id = "shop" onclick="location.href='shop.html'"> Shop </button>
+
+    </div>
+
+    <div class = "stats">
+      <p id = "name"></p>
+      <p id = "level"></p>
+      <p id = "health"></p>
+      <p id = "mana"></p>
+      <p id = "attack"></p>
+      <p id = "defeated"></p>
+      <p id = "restNumber"></p>
+
+
+    </div>
+
+    <div class = "interface">
+      <button  id = "attackButton" onclick = "gameManager.attackPlayer()" title = "Attacks the enemy using the player's attack" disabled >Attack</button>
+      <button id = "defend" onclick = "defend()" title = "Blocks at least a portion of the attack and gains up to 10 mana" disabled>Defend</button>
+      <div class="dropdown">
+        <button id = "magic" class="dropbtn" disabled>Magic</button>
+          <div class="dropdown-content">
+              <Button id = "fireBall" class = "fireBall" title = "Shoots a fireball at the enemy for 20-30 damage. Costs 25 mana." onclick = "castSpell(fireBall)" disabled>Fireball</button>
+              <button id = "iceRay" class = "iceRay" title = "Shoots a ray of ice at the enemy for 10-20 damage. Costs 15 mana." onclick = "castSpell(iceRay)" disabled>Ice Ray</button>
+              <button id = "healingHands" class = "healingHands" title = "Heals yourself for 20-30 health. Costs 30 mana." onclick = "castSpell(healingHand)" disabled>Healing Hands</button>
+              <button id = "lightningStorm" class = "lightningStorm" title = "Calls down a mighty lightning storm for 40-50 damage. Costs 35 mana." onclick = "castSpell(lightningStorm)" disabled>Lightning Storm</button>
+          </div>
+      </div>
+    </div>
+
+    <div class = "log">
+      <p id = "action1"></p>
+      <p id = "action2"></p>
+      <p id = "action3"></p>
+    </div>
+
+    <div class = "outsideActions">
+      <button id = "find" onclick = "gameManager.searchEnemy()" title = "Searches for an enemy to battle" >Find Enemy</button>
+      <button id = "battle" onclick = "gameManager.battle()" disabled>Battle</button>
+      <button id = "rest" onclick = "gameManager.rest()" title = "Regenerates the Player's hitpoints and stats">Rest</button>
+      
+      <div class = "invDrop">
+        <button id = "inventory" class = "inv" disabled> Inventory </button>
+        <div class = "dropdownINV">
+          <p id = "gold"> Gold Coins </p> 
+          <button class = "healthPotion" id = "healthP" title = "Consume a health potion to regain 50 health." onclick = "healthPotion()" disabled >Health Potion </p>
+          <button class = "manaPotion" id = "manaP" title = "Consume a mana potion to regain 30 health." onclick = "manaPotion()" disabled >Mana Potion </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class = "enemy">
+      <p id = "turn"></p>
+      <p id = "nameE"></p>
+      <p id = "healthE"></p>
+      <p id = "attackE"></p>
+    </div>
+  </body>
+</html>
